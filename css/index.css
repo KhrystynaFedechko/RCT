@@ -1,0 +1,41 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+table {
+    margin-left: 35%;
+    margin-top: 10%;
+}
+input[type=text],
+input[type=password],
+input[type=button] {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+}
+input[type=button] {
+    background-color: #265a88;
+    color: white;
+    margin-left: 100px;
+    width: 120%;
+}
+td label {
+    display: block;
+    width: 100px;
+}
+tr {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#loginForm {
+    margin-top: 5cm;
+}
+#invalid {
+    color: red !important;
+}
+
+.logo {
+    width: 150px;
+}
