@@ -1,11 +1,8 @@
-body {
-    max-width: 1200px;
-    margin: 0 auto;
+.container {
+    max-width: 900px;
+    font-size: 12px;
 }
-table {
-    margin-left: 35%;
-    margin-top: 10%;
-}
+
 input[type=text],
 input[type=password],
 input[type=button] {
@@ -14,28 +11,58 @@ input[type=button] {
     border: 1px solid lightblue;
     border-radius: 5px;
 }
+
 input[type=button] {
     background-color: #265a88;
     color: white;
     margin-left: 100px;
     width: 120%;
 }
-td label {
-    display: block;
-    width: 100px;
-}
-tr {
-    display: block;
-    margin-bottom: 10px;
-}
 
 #loginForm {
-    margin-top: 5cm;
+    margin-top: 3cm;
 }
+
 #invalid {
     color: red !important;
 }
 
 .logo {
-    width: 150px;
+    width: 130px;
+}
+
+#rmaNav {
+    background-color: #e6f2fe;
+}
+
+#projectName {
+    margin-top: 40px;
+}
+
+#projectName h4 {
+    font-weight: bold;
+}
+
+#loggedField {
+    margin-top: 20px;
+}
+
+.pending {
+    margin-top: 20px;
+}
+
+.blueText {
+    display: inline;
+    color: #347ab6;
+}
+
+.grayText {
+    color: #8d8188;
+}
+
+table {
+    margin-top: 20px;
+}
+footer .grayText {
+    margin-top: 50px;
 }
