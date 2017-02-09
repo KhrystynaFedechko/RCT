@@ -1,3 +1,0 @@
-function backToLoginPage() {
-    window.location = "../";
-}
