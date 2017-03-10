@@ -7,9 +7,90 @@
 </head>
 <body>
 <div class="container">
-<div id="header"></div>
+    <div id="header"></div>
     <div class="row">
         <div id="navigation"></div>
+        <div class="col-sm-8"></div>
+        <div class="col-sm-2 blueText text-right"><span class="redStar">*</span> required fields</div>
+        <form class="newRequestForm">
+            <div>
+            <label for="customerName" class="col-sm-2 inlineForm">Customer Name:</label>
+            <div class="col-sm-3 inlineForm">
+                <input class="form-control" type="text" placeholder="Customer Name" id="customerName">
+            </div>
+            </div>
+            <div class="col-sm-2">
+                <label for="customerNumber">Customer number<span class="redStar">*</span></label>
+                <input type="number" class="form-control" id="customerNumber" placeholder="Customer#">
+            </div>
+            <div class="col-sm-3">
+                <label for="headOfficeName">Head Office Name</label>
+                <input type="text" class="form-control" id="headOfficeName" placeholder="Head Office Name">
+            </div>
+            <div>
+            <label for="csrName" class="col-sm-2 inlineForm">CSR Name: <span class="redStar">*</span></label>
+            <div class="col-sm-5 inlineForm">
+                <input class="form-control" type="text" placeholder="Donna Boucher" id="csrName">
+            </div>
+            </div>
+            <div class="col-sm-3">
+                <label for="totalValueOfReturn">Total Value of Return <span class="redStar">*</span></label>
+                <input type="number" class="form-control" id="totalValueOfReturn" onkeyup="openAdditionalForm()" placeholder="$">
+            </div>
+            <div class="col-sm-3">
+                <label for="initiatedDate">Initiated Date</label>
+                <input type="date" class="form-control" id="initiatedDate">
+            </div>
+            <div class="col-sm-7">
+                <label for="returnWarehouse">Return Warehouse</label>
+                <input type="text" class="form-control" id="returnWarehouse">
+            </div>
+            <div class="col-sm-2 underNavEmptyField"></div>
+            <div class="col-sm-10 underline"></div>
+            <div class="col-sm-10 text-center">
+                <b>Return Rational(Check one)</b><span class="redStar">*</span>
+            </div>
+            <div class="col-sm-2 form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio"> Planogram Change
+                </label>
+            </div>
+            <div class="col-sm-2 form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio"> Catalog Change
+                </label>
+            </div>
+            <div class="col-sm-2 form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio"> Overstock
+                </label>
+            </div>
+            <div class="col-sm-2 form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio"> Product Recall
+                </label>
+            </div>
+            <div class="col-sm-2 form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio"> Other explain
+                </label>
+            </div>
+            <div class="col-sm-10 form-group">
+                <label for="explanationRR">Explanation regarding return:</label>
+                <textarea class="form-control" id="explanationRR" rows="2"></textarea>
+            </div>
+            <div id="additionalForm"></div>
+            <div class="col-sm-10 underline"></div>
+            <div class="col-sm-2">
+            <button type="button" class="btn btn-primary newRCTButton" id="saveBtn">Save</button>
+            </div>
+            <div class="col-sm-offset-5 col-sm-1">
+                <button type="submit" class="btn btn-primary newRCTButton">Submit</button>
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-secondary newRCTButton">Clear</button>
+            </div>
+        </form>
     </div>
     <div id="footer"></div>
 </div>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../../css/bootstrap.css" type="text/css">
+</head>
+<body>
+<form class="newRequestForm" >
+    <div class="col-sm-10 form-group">
+        <label for="replenishmentDiscussion">Replenishment Discussion:(Timing, estimated $ amount)</label>
+        <textarea class="form-control" id="replenishmentDiscussion" rows="2"></textarea>
+    </div>
+    <div class="col-sm-10">
+        <b>Expected return inventory (include sku, quantity and cost)</b>
+        <button class="btn_upload">Add SKU</button>
+        <input class="hide fileupload" type="file" name="files[]">
+        <button class="btn_upload">Add File</button>
+        <input class="hide fileupload" type="file" name="files[]">
+    </div>
+    <div class="col-sm-10">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>
+                SKU
+            </th>
+            <th>
+                PO Number
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th>
+                Cost
+            </th>
+            <th>
+                Edit
+            </th>
+            <th>
+                Remove
+            </th>
+        </tr>
+        </thead>
+    </table>
+    </div>
+    <div class="col-sm-10">
+        <div>
+        <b>Return Conditions:</b>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+               Restocking fee charged
+            </label><br>
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox">
+                Full case quantity only
+            </label><br>
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox">
+                Customer paying freight
+            </label>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <label for="restockingFee">Restocking fee %</label>
+        <input type="text" class="form-control" id="restockingFee" placeholder="%">
+    </div>
+
+</form>
+
+
+<script type="text/javascript" src="../../js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../../js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="../../app/newRequest/newRequest.js"></script>
+</body>
+</html>

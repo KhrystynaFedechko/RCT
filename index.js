@@ -14,7 +14,7 @@ $(function () {
             dataType: 'json'
         })
             .done(function (response) {
-                if ( response.userRole == "ROLE_REQUESTOR") {
+                if ( response.userRole == "ROLE_REQUESTOR" ) {
                     window.location = "api/home/requestor";
                 }
             })
